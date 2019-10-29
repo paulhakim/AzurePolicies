@@ -1,4 +1,4 @@
-#Allow Image Publishers
+# Allow Image Publishers
 
 This SAMPLE policy allows only certain image publishers (defined by parameters)
 
