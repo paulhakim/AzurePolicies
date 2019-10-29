@@ -1,0 +1,1 @@
+https://portal.azure.com/#blade/Microsoft_Azure_Policy/CreatePolicyDefinitionBlade/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fpaulhakim%2FSamples%2FCompute%2FAllowImagePublishers%2FAAzurePolicies.json
