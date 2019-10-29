@@ -1,0 +1,32 @@
+{
+  "properties": {
+    "displayName": "Not allowed resource types",
+    "policyType": "BuiltIn",
+    "mode": "All",
+    "description": "This policy enables you to specify the resource types that your organization cannot deploy.",
+    "metadata": {
+      "category": "General"
+    },
+    "parameters": {
+      "listOfResourceTypesNotAllowed": {
+        "type": "Array",
+        "metadata": {
+          "description": "The list of resource types that cannot be deployed.",
+          "displayName": "Not allowed resource types",
+          "strongType": "resourceTypes"
+        }
+      }
+    },
+    "policyRule": {
+      "if": {
+        "field": "type",
+        "in": "[parameters('listOfResourceTypesNotAllowed')]"
+      },
+      "then": {
+        "effect": "Deny"
+      }
+    }
+  },
+  "type": "Microsoft.Authorization/policyDefinitions",
+  "name": "NotAllowedResourceTypes"
+}
